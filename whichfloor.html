@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Floor</title>
+</head>
+<body>
+    <script>
+        var maximum_stories = 40;
+        var userNum = parseInt(prompt("On what floor of the building is your office?"), 10);
+        while (userNum > maximum_stories){
+            console.log("You entered " + userNum + ". There are only " + maximum_stories );
+            userNum = parseInt(prompt("On what floor of the building is your office?"), 10);
+        }
+        console.log("Congrats! You work on floor: "+ userNum);
+    </script>
+</body>
+</html>

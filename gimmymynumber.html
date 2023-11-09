@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimme my number</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("Gimmy a number greater than 100 plz.."), 10);
+        // console.log(typeof(num));
+        while (num <= 100) {
+            console.log(num+" is not greater than 100! Try again..");
+            num = parseInt(prompt("Nope, not what i asked for... Gimmy a number greater than 100 plz.."), 10);
+           // console.log(typeof(num));
+        }
+        console.log (num + " is greater than 100! Good work");
+    </script>
+</body>
+</html>
